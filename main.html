@@ -6,6 +6,19 @@
     <title>Document</title>
 </head>
 <body> 
-    <h1> Hola bbs </h1>
+    <canvas id="dibujo" width="1000" height="600">
+        <script>
+        var c = document.getElementById("dibujo");
+        var context = c.getContext("2d");
+
+        context.beginPath();
+        context.moveTo(750,475);//DERECHA
+        context.lineTo(610,430);//ARRIBA
+        context.lineTo(610,590);//ABAJO
+        context.closePath();//CERRAR FIGURA
+        context.fillStyle= "#f3db04";//COLOR
+        context.fill();
+    </script>
+    </canvas>
 </body>
 </html>
